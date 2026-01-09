@@ -16,15 +16,18 @@ function time() {
 }
 
 function greet(name) {
-    if ()
-  console.log("Buongiorno", name);
-  console.log("Buonpomeriggio", name);
-  console.log("Buonasera", name);
+  if (hour <= 13) {
+    console.log("Buongiorno", name);
+  } else if (hour <= 17) {
+    console.log("Buonpomeriggio", name);
+  } else {
+    console.log("Buonasera", name);
+  }
 }
 
 // Invoca la funzione qui e stampa il risultato in console
 
-const orario = time();
+const hour = time();
 
 const userName = greet("Mario");
 console.log(userName);
