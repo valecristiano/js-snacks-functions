@@ -2,7 +2,6 @@
 restituisca nuovo array con le iniziali di ogni parola dell'array fornito */
 
 let names = ["Anna", "Luca", "Marco", "Adele", "Giovanni", "Alessandra"];
-console.table(names);
 
 // Dichiara la funzione qui.
 /**
@@ -15,7 +14,7 @@ function initialsArray(namesArray) {
   for (let i = 0; i < namesArray.length; i++) {
     const currentName = namesArray[i];
     const initial = currentName[0];
-    console.log("initial", initial);
+
     newArray.push(initial);
   }
   return newArray;
